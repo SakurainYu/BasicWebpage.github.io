@@ -1,0 +1,104 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="Assignment5.css"/>
+    <title>Basic Webpage</title>
+    <script src="Assignment5.js" DEFER></script>
+</head>
+<body>
+<div class="tab">
+    <button class="tablinks" onclick="showTab(event, 'Course')">Course</button>
+    <button class="tablinks" onclick="showTab(event, 'Browser')">Browser</button>
+    <button class="tablinks" onclick="showTab(event, 'About')">About</button>
+</div>
+
+<!--Course-->
+<div id="Course" class="tabcontent" style="display: none">
+
+    <h2>Course</h2>
+    <p><a href="https://gaia.cs.umass.edu/kurose_ross/eighth.php">Computer Networking: A Top-Down Approach</a></p>
+    <p><a href="https://www.w3schools.com">W3Schools</a></p>
+    <p><a href="https://www.geeksforgeeks.org/web-development/">Web Development</a></p>
+
+</div>
+
+<!--Browser-->
+<div id="Browser" class="tabcontent" style="display: none">
+
+    <h2>Browser</h2>
+    <div>Navigator
+        <ul>
+            <li id="appName"></li>
+            <li id="product"></li>
+            <li id="appVersion"></li>
+            <li id="userAgent"></li>
+            <li id="platform"></li>
+            <li id="language"></li>
+        </ul>
+    </div>
+
+    <div>Window
+        <ul>
+            <li id="innerHeight"></li>
+            <li id="innerWidth"></li>
+        </ul>
+    </div>
+
+    <div>Screen
+        <ul>
+            <li id="width"></li>
+            <li id="height"></li>
+            <li id="availWidth"></li>
+            <li id="availHeight"></li>
+            <li id="colorDepth"></li>
+            <li id="pixelDepth"></li>
+        </ul>
+    </div>
+
+    <div>Location
+        <ul>
+            <li id="href"></li>
+            <li id="hostname"></li>
+            <li id="pathname"></li>
+            <li id="protocol"></li>
+        </ul>
+    </div>
+
+    <div>Geolocation
+        <ul>
+            <li id="Latitude"></li>
+            <li id="Longitude"></li>
+        </ul>
+    </div>
+
+</div>
+
+<!--About-->
+<div id="About" class="tabcontent" style="display: none">
+
+    <h2>About me</h2>
+    <div>
+        Developer: Yucheng Yang<br>
+        Email: Yucheng.Yang31@qmail.cuny.edu<br>
+        Phone: (917)915-0361<br>
+        School: Queens College<br>
+    </div>
+
+    <h3>Contact me by email:</h3>
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name" size="50"><br>
+        E-mail:<br>
+        <input type="text" name="mail" size="50"><br>
+        Message:<br>
+        <textarea name="message" rows="10" cols="52" style="resize: none"> </textarea><br>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+
+</div>
+
+
+</body>
+
+
+
